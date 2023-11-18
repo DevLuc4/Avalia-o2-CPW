@@ -1,0 +1,38 @@
+@media screen and (max-width: 600px) {
+    #hero {
+        height: 300px;
+    }
+    
+
+    #slogan span {
+        font-size: 32px;
+    }
+
+    #hero-text p{
+        font-size: 24px;
+    }
+
+    .marketing-black :hover .product,
+    .marketing-white :hover .product {
+        animation: none;
+   }
+
+   .white-title, .black-title {
+    font-size: 39px;
+    text-align: center;
+   }
+
+   .white-description, .black-description {
+    font-size: 21px;
+    text-align: left;
+    border-left: 0px;
+    margin-left: 15px;
+    margin-right: auto;
+   }
+
+   .product2 {
+    animation: none;
+    opacity: 1;
+    width: 80%;
+   }
+}

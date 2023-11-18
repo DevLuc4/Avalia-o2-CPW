@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+}
+
+:root {
+    --hero-image: url(../img/hero.jpg);
+    --header-color: #24252a;
+    --marketing-black-background: radial-gradient(#000, #222111);
+    --marketing-white-background: #fff;
+    --footer-color: #24252a;
+}
+
+header {
+    background-color: var(--header-color);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    filter: opacity(0.6);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1;
+  
+}
+
+#app-title, #about, #products, #home {
+    color: #fff;
+}
+
+#app-title {
+    font-family: 'regular';
+    margin: 0;
+}
+
+#about,#products,#home {
+    font-family: 'thin';
+    font-size: 17px;
+    text-decoration: none;
+    
+    
+}
+
+#home:hover, #about:hover, #products:hover {
+    color: #ccc;
+}
+
+
+#home{
+    margin: 0 30px 0 auto;
+}
+#about{
+    margin: 0 20px 0px auto;
+    margin-left: 0px;
+    
+}
+
+#hero{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), var(--hero-image);
+    height: 500px;
+    padding: 10px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    justify-content: center;
+}
+
+#hero-text {
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+
+#slogan {
+    text-align: center;
+    
+      
+}
+
+#slogan span {
+    position: relative;
+    display: inline-block;
+
+    font-size: 55px;
+    font-family: 'regular';
+    font-weight: bold;
+    letter-spacing: -4px;
+    animation: fade-in 3s infinite;
+    animation-timing-function: ease-out;
+    animation-delay: calc(100ms * var(--i));
+
+}
+
+
+
+#hero-text p {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'italic';
+
+}
+
+.marketing-black, .marketing-white {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.marketing-black {
+    background: var(--marketing-black-background);
+}
+
+.marketing-white {
+    background: var(--marketing-white-background);
+}
+
+.white-title, .white-description {
+    color: #fff;
+}
+
+.white-title, .black-title {
+    font-family: 'regular';
+    font-size: 49px;
+}
+
+.white-description, .black-description {
+    font-family: 'thin';
+    font-size: 30px;
+}
+
+.product {
+    width: 30%;
+}
+
+.produtoFone {
+    display: flex;
+    
+}
+.produtoFone img {
+    width: 500px;
+    height: 400px;
+}
+
+.phoneProduct {
+    width: 40%;
+    margin-left: 2%;
+    border-radius: 50px;
+}
+
+.know-more {
+    margin: 40px 0;
+    background-color: #038aff;
+    border: none;
+    width: 200px;
+    padding: 10px 0;
+    color: #fff;
+    font-family: 'regular';
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+footer {
+    background-color: var(--footer-color);
+    padding: 20px 20px;
+}
+
+footer p {
+    color: #bbb;
+    font-family: 'thin';
+    font-size: 20px;
+    text-align: center;
+
+}
